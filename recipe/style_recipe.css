@@ -1,0 +1,68 @@
+.corps {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+    width: 40%;
+    min-width: 250px !important;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title h6 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.caracteristiques {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.caracteristiques .caracteristique {
+    margin-bottom: 20px;
+}
+
+.recette {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+.recetteInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    margin-bottom: 20px;
+}
+
+.recetteInfo h2 {
+    margin-bottom: 10px;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
