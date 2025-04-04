@@ -123,3 +123,23 @@ p {
     width: auto;
   }
 }
+
+/* FOOTER.PHP */
+
+footer {
+  margin: 0;
+  padding: 10%;
+  background-color: #f3f6fd;
+}
+
+footer .footer-horizontal-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+footer .footer-horizontal-container > div {
+  display: flex;
+  flex-direction: column;
+}

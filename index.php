@@ -27,29 +27,58 @@ autoConnect();
           <h3>Filtres :</h3>
           <div class="filter-titre">
             <label for="titre">Titre :</label>
-            <input type="text" id="titre" name="titre" value="<?php if (isset($_POST['titre'])) {echo $_POST['titre'];} else { echo '';} ?>">
+            <input type="text" id="titre" name="titre" value="<?php if (isset($_POST['titre'])) {
+              echo $_POST['titre'];
+            } else {
+              echo '';
+            } ?>">
           </div>
           <div class="filter-temps">
             <label for="temps">Temps de Préparation :</label>
-            <input type="text" id="temps" name="temps" value="<?php if (isset($_POST['temps'])) {echo $_POST['temps'];} else { echo '';} ?>">
+            <input type="text" id="temps" name="temps" value="<?php if (isset($_POST['temps'])) {
+              echo $_POST['temps'];
+            } else {
+              echo '';
+            } ?>">
           </div>
           <div class="filter-temps">
             <label for="temps2">Temps de Cuisson:</label>
-            <input type="text" id="temps2" name="temps2" value="<?php if (isset($_POST['temps2'])) {echo $_POST['temps2'];} else { echo '';} ?>">
+            <input type="text" id="temps2" name="temps2" value="<?php if (isset($_POST['temps2'])) {
+              echo $_POST['temps2'];
+            } else {
+              echo '';
+            } ?>">
           </div>
           <div class="filter-personnes">
             <label for="personnes">Personnes :</label>
-            <input type="text" id="personnes" name="personnes" value="<?php if (isset($_POST['personnes'])) {echo $_POST['personnes'];} else { echo '';} ?>">
+            <input type="text" id="personnes" name="personnes" value="<?php if (isset($_POST['personnes'])) {
+              echo $_POST['personnes'];
+            } else {
+              echo '';
+            } ?>">
           </div>
           <div class="filtre-type">
             <label for="category">Catégorie :</label>
             <select id="category" name="category">
-              <option value="" <?php if (!isset($_POST['category']) || $_POST['category'] == '') {echo 'selected';} ?>>Toutes</option>
-              <option value="Entrée" <?php if (isset($_POST['category']) && $_POST['category'] == 'Entrée') {echo 'selected';} ?>>Entrée</option>
-              <option value="Plat" <?php if (isset($_POST['category']) && $_POST['category'] == 'Plat') {echo 'selected';} ?>>Plat</option>
-              <option value="Accompagnement" <?php if (isset($_POST['category']) && $_POST['category'] == 'selected') {echo 'selected';} ?>>Accompagnement</option>
-              <option value="Sauce" <?php if (isset($_POST['category']) && $_POST['category'] == 'Sauce') {echo 'selected';} ?>>Sauce</option>
-              <option value="Dessert" <?php if (isset($_POST['category']) && $_POST['category'] == 'Dessert') {echo 'selected';} ?>>Dessert</option>
+              <option value="" <?php if (!isset($_POST['category']) || $_POST['category'] == '') {
+                echo 'selected';
+              } ?>>
+                Toutes</option>
+              <option value="Entrée" <?php if (isset($_POST['category']) && $_POST['category'] == 'Entrée') {
+                echo 'selected';
+              } ?>>Entrée</option>
+              <option value="Plat" <?php if (isset($_POST['category']) && $_POST['category'] == 'Plat') {
+                echo 'selected';
+              } ?>>Plat</option>
+              <option value="Accompagnement" <?php if (isset($_POST['category']) && $_POST['category'] == 'selected') {
+                echo 'selected';
+              } ?>>Accompagnement</option>
+              <option value="Sauce" <?php if (isset($_POST['category']) && $_POST['category'] == 'Sauce') {
+                echo 'selected';
+              } ?>>Sauce</option>
+              <option value="Dessert" <?php if (isset($_POST['category']) && $_POST['category'] == 'Dessert') {
+                echo 'selected';
+              } ?>>Dessert</option>
             </select>
           </div>
           <div class="final">
@@ -107,7 +136,9 @@ autoConnect();
         </a>
       </div>
     <?php endif; ?>
-    <script src="script.js"></script>
+  </div>
+  <?php require_once(__DIR__ . '/footer.php'); ?>
+  <script src="script.js"></script>
 </body>
 
 </html>
