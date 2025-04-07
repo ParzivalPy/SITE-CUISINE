@@ -9,7 +9,7 @@
 /* HEADER.PHP */
 
 header {
-  background-color: #f3f6fd;
+  background-color: #d9e2ec;
   font-family: "Fredoka";
   font-weight: 600;
   gap: 25px;
@@ -125,7 +125,7 @@ header button {
 footer {
   margin: 0;
   padding: 50px 10%;
-  background-color: #f3f6fd;
+  background-color: #d9e2ec;
   font-family: "Fredoka", sans-serif;
   color: #4a6572;
 }
