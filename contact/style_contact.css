@@ -1,50 +1,67 @@
-.page {
+/* Importation de la police Fredoka */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+/* Corps principal */
+body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
+  background-color: #f3f6fd; /* Fond bleu-gris clair */
+  color: #4a6572; /* Bleu-gris foncé */
+}
+.page {
   margin: 30px 20%;
   position: relative;
 }
 
-input {
+/* Champs de formulaire */
+input,
+textarea {
   font-size: 1em;
   width: 100%;
   border: none;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #b0bec5; /* Soulignement bleu-gris moyen */
   border-radius: 3px;
   outline: none;
+  background-color: #ffffff; /* Fond blanc */
+  color: #4a6572; /* Bleu-gris foncé */
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 textarea {
-  font-size: 1em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   resize: none;
-  width: 100%;
   height: 20em;
-  border: 3px solid #000000;
-  border-radius: 3px;
+  border: 3px solid #b0bec5; /* Bordure bleu-gris moyen */
 }
 
+/* Boutons */
 #submit,
 #WrongSubmit {
-  color: #000000;
+  color: #ffffff; /* Blanc pur */
   margin-top: 20px;
-  background-color: #ffffff;
-  padding: 5px;
-  border: 3px solid #000000;
+  background-color: #b0bec5; /* Bleu-gris moyen */
+  padding: 10px 20px;
+  border: none;
   border-radius: 50px;
-  transition: all 0.2s linear;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.page > #WrongSubmit:hover {
-  color: #ffffff;
-  background-color: #000000;
+#submit:hover,
+#WrongSubmit:hover {
+  background-color: #4a6572; /* Bleu-gris foncé */
 }
 
+/* Placeholder */
 input::placeholder,
 textarea::placeholder {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #b0bec5; /* Bleu-gris moyen */
 }
 
+/* Popup */
 .PopupParent {
   display: none;
   position: absolute;
@@ -62,20 +79,34 @@ textarea::placeholder {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  background: #f3f6fd;
-  border: 3px solid #000000;
-  border-radius: 3px;
-  padding: 5px 10px;
+  background: #ffffff; /* Fond blanc */
+  border: 3px solid #b0bec5; /* Bordure bleu-gris moyen */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
 .popup a {
   display: block;
   padding-top: 10px;
-  color: #000000;
+  color: #4a6572; /* Bleu-gris foncé */
   text-align: right;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+.popup a:hover {
+  color: #b0bec5; /* Bleu-gris moyen */
+}
+
+/* Message affiché */
 #afficheMessage {
   width: 80vw;
   height: 50vh;
+  background-color: #e0e6ed; /* Bleu-gris clair */
+  border: 3px solid #b0bec5; /* Bordure bleu-gris moyen */
+  border-radius: 10px;
+  padding: 20px;
+  color: #4a6572; /* Bleu-gris foncé */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }

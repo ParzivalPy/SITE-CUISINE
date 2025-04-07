@@ -1,77 +1,116 @@
+/* Importation de la police Fredoka */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+/* Corps principal */
+body {
+  background-color: #f3f6fd; /* Fond bleu-gris clair */
+  color: #4a6572; /* Bleu-gris foncé pour le texte */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Conteneur principal */
 .page {
   display: flex;
-  justify-content: space-evenly;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  margin-top: 30px;
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
 }
 
+/* Formulaire */
 form {
-  width: 400px;
-  margin: 0 10%;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Fond blanc */
+  border: solid 3px #b0bec5; /* Bordure bleu-gris moyen */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
-form > div {
+/* Champs de formulaire */
+form input,
+form textarea {
+  font-size: 1em;
+  width: 100%;
+  border: none;
+  border-bottom: 3px solid #b0bec5; /* Soulignement bleu-gris moyen */
+  background-color: #ffffff; /* Fond blanc */
+  color: #4a6572; /* Bleu-gris foncé */
+  padding: 10px;
   margin-bottom: 20px;
-}
-
-.alert {
-  color: red;
-}
-
-input {
-  font-size: 1em;
-  width: 100%;
-  border: none;
-  border-bottom: 3px solid black;
   border-radius: 3px;
   outline: none;
 }
 
-textarea {
-  font-size: 1em;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 100%;
-  overflow: hidden;
-  resize: none;
-  border: none;
-  border-bottom: 3px solid black;
-  border-radius: 3px;
-  outline: none;
-  padding-bottom: 5px;
+form input:focus,
+form textarea:focus {
+  border-bottom: 3px solid #4a6572; /* Bleu-gris foncé au focus */
 }
 
+/* Boutons */
 .buttons {
-  color: #000000;
+  color: #ffffff;
   margin-top: 20px;
-  background-color: #ffffff;
-  padding: 5px;
-  border: 3px solid #000000;
+  background-color: #b0bec5; /* Bleu-gris moyen */
+  padding: 10px 20px;
+  border: none;
   border-radius: 50px;
-  transition: all 0.2s linear;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.buttons:hover {
+  background-color: #4a6572; /* Bleu-gris foncé */
+}
+
+/* Bouton de soumission */
 #submit {
   margin-top: 10px;
+  background-color: #b0bec5; /* Bleu-gris moyen */
+  color: #ffffff; /* Blanc pur */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #submit:hover {
-  color: #ffffff;
-  background-color: #000000;
+  background-color: #4a6572; /* Bleu-gris foncé */
 }
 
+/* Texte d'alerte */
+.alert {
+  color: #4a6572; /* Bleu-gris foncé */
+  font-weight: bold;
+}
+
+/* Placeholder */
 input::placeholder,
 textarea::placeholder {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #b0bec5; /* Bleu-gris moyen */
 }
 
+/* Images */
 img {
   width: 50%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
+/* Page d'erreur */
 .error-page {
   display: flex;
   flex-direction: column;
@@ -83,4 +122,5 @@ img {
   font-size: 30px;
   text-align: center;
   margin-top: 50px;
+  color: #4a6572; /* Bleu-gris foncé */
 }
