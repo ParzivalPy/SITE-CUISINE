@@ -36,15 +36,27 @@ body {
 
 .page-content {
   display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 80%;
-  gap: 20px; /* Espacement entre les sections */
+  margin-top: 30px;
+  gap: 20px;
 }
 
 .filters {
-  flex: 0 0 300px; /* Section des filtres avec une largeur fixe de 300px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: solid 3px #b0bec5;
   background-color: #e0e6ed;
-  padding: 20px;
   border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 400px;
 }
 
 .filters > div {
@@ -105,10 +117,12 @@ body {
 }
 
 .recettes {
-  flex: 1; /* La section des recettes s'étend pour occuper l'espace restant */
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
+  width: 100%;
+  padding: 20px;
 }
 
 .recette {
@@ -116,7 +130,7 @@ body {
   border: solid 3px #b0bec5;
   border-radius: 10px;
   padding: 20px;
-  width: 100%;
+  width: 300px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
