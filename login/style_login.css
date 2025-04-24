@@ -1,74 +1,115 @@
-.page {
-  display: flex;
-  justify-content: space-evenly;
+/* Importation de la police Fredoka */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+
+/* Corps principal */
+body {
+  background-color: #f3f6fd; /* Fond bleu-gris clair */
+  color: #4a6572; /* Bleu-gris foncé pour le texte */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1em;
-  margin-top: 30px;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
-.dialog-box {
-  border: 3px solid red;
-  background-color: rgba(255, 0, 0, 0.2);
-  width: 100% !important;
+/* Conteneur principal */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   padding: 20px;
+}
+
+/* Boîte de dialogue */
+.dialog-box {
+  border: 3px solid #b0bec5; /* Bordure bleu-gris moyen */
+  background-color: #e0e6ed; /* Fond bleu-gris clair */
   width: 300px;
+  padding: 20px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
   margin-bottom: 30px;
 }
 
+/* Formulaire */
 form {
-  width: 400px;
-  margin: 0 10%;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff; /* Fond blanc */
+  border: solid 3px #b0bec5; /* Bordure bleu-gris moyen */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
-.alert {
-  color: red;
-}
-
-input {
+/* Champs de formulaire */
+form input {
   font-size: 1em;
   width: 100%;
   border: none;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #b0bec5; /* Soulignement bleu-gris moyen */
+  background-color: #ffffff; /* Fond blanc */
+  color: #4a6572; /* Bleu-gris foncé */
+  padding: 10px;
+  margin-bottom: 20px;
   border-radius: 3px;
   outline: none;
 }
 
+form input:focus {
+  border-bottom: 3px solid #4a6572; /* Bleu-gris foncé au focus */
+}
+
+/* Bouton de soumission */
 #submit {
-  color: #000000;
-  margin-top: 20px;
-  background-color: #ffffff;
-  padding: 5px;
-  border: 3px solid #000000;
+  background-color: #b0bec5; /* Bleu-gris moyen */
+  color: #ffffff; /* Blanc pur */
+  border: none;
+  padding: 10px 20px;
   border-radius: 50px;
-  transition: all 0.2s linear;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #submit:hover {
-  color: #ffffff;
-  background-color: #000000;
+  background-color: #4a6572; /* Bleu-gris foncé */
 }
 
-input::placeholder,
-textarea::placeholder {
+/* Texte d'alerte */
+.alert {
+  color: #4a6572; /* Bleu-gris foncé */
+  font-weight: bold;
+}
+
+/* Placeholder */
+input::placeholder {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #b0bec5; /* Bleu-gris moyen */
 }
 
+/* Images */
 img {
   width: 50%;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
+/* Texte sous le formulaire */
 form > p {
   margin-top: 20px;
   text-align: center;
   font-size: 0.8em;
   font-style: italic;
+  color: #4a6572; /* Bleu-gris foncé */
 }
 
+/* Corps principal */
 .corps {
   display: flex;
   flex-direction: column;
@@ -78,6 +119,7 @@ form > p {
   width: 60%;
 }
 
+/* Conteneur */
 .container {
   display: flex;
   flex-direction: column;
@@ -87,6 +129,7 @@ form > p {
   justify-content: space-evenly;
 }
 
+/* Recette */
 .recette {
   display: flex;
   justify-content: space-between;
@@ -100,6 +143,7 @@ form > p {
   flex-wrap: wrap;
 }
 
+/* Description */
 .description {
   display: flex;
   flex-direction: column;
@@ -112,6 +156,7 @@ form > p {
   color: black;
 }
 
+/* Informations de recette */
 .recipe_informations {
   display: flex;
   flex-direction: row;
@@ -120,6 +165,7 @@ form > p {
   gap: 30px;
 }
 
+/* Actions */
 .actions {
   display: flex;
   justify-content: space-evenly;
